@@ -1,5 +1,5 @@
 {
-  "name": "travis-trigger",
+  "name": "trigger-travis",
   "version": "0.0.2",
   "description": "Tool to trigger travis build using Travis api v3",
   "main": "lib/index.js",
