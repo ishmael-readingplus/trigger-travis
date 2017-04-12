@@ -1,1 +1,1 @@
-# travis-trgger
+# trigger-travis
