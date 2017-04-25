@@ -1,6 +1,6 @@
 # trigger-travis
 
-Used to tigger a travis build programmatically, usin travis api 3. Currently I use [minimist](https://github.com/substack/minimist) to parse arguments. I'm sure there are better solutions. I'd be happy to get this to be more robust. Please fork and hack away.
+Used to tigger a travis build programmatically, using travis api 3.  I'd be happy to get this to be more robust. Please fork and hack away.
 
 It accepts the following arguments
 ```
