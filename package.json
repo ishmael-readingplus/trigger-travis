@@ -2,9 +2,9 @@
   "name": "trigger-travis",
   "version": "0.0.6",
   "description": "Tool to trigger travis build using Travis api v3",
-  "main": "lib/index.js",
+  "main": "index.js",
   "bin": {
-    "trigger-travis": "lib/index.js"
+    "trigger-travis": "bin/trigger-travis.js"
   },
   "repository": "https://github.com/ishmael-readingplus/trigger-travis.git",
   "scripts": {
@@ -23,6 +23,7 @@
     "chalk": "^1.1.3",
     "got": "^6.7.1",
     "minimist": "^1.2.0",
+    "pkginfo": "^0.4.0",
     "shelljs": "^0.7.7"
   }
 }
