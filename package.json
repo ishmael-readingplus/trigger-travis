@@ -4,7 +4,7 @@
   "description": "Tool to trigger travis build using Travis api v3",
   "main": "index.js",
   "bin": {
-    "trigger-travis": "bin/trigger-travis.js"
+    "trigger-travis": "./bin/trigger-travis"
   },
   "repository": "https://github.com/ishmael-readingplus/trigger-travis.git",
   "scripts": {

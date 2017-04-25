@@ -42,5 +42,4 @@ parser.addArgument(['--debug'], {
 });
 
 var argv = parser.parseArgs();
-console.log(argv)
-trigger.pull(argv)
+trigger.pull(argv);
