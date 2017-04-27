@@ -40,6 +40,10 @@ parser.addArgument(['--debug'], {
     action: 'storeTrue',
     type: Boolean
 });
+parser.addArgument(['-c','--config'], {
+    help: 'A config Object as discribed here https://docs.travis-ci.com/user/triggering-builds',
+    defaultValue: {},
+});
 
 var argv = parser.parseArgs();
 trigger.pull(argv);
