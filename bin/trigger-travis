@@ -3,6 +3,7 @@
 const pkginfo = require('pkginfo')(module),
     trigger = require('../lib/trigger'),
     ArgumentParser = require('argparse').ArgumentParser,
+    yaml = require('js-yaml'),
     parser = new ArgumentParser({
         version: this.version,
         addHelp: true,
@@ -41,7 +42,9 @@ parser.addArgument(['--debug'], {
     type: Boolean
 });
 parser.addArgument(['-c','--config'], {
-    help: 'A config Object as discribed here https://docs.travis-ci.com/user/triggering-builds',
+    help: 'A config in YAML format as discribed here https://docs.travis-ci.com/user/triggering-builds',
+    // CLI interface takes YAML string but when calling pull() programmatically you should pass a JS object.
+    type: yaml.safeLoad,
     defaultValue: {},
 });
 
